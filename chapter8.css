@@ -1,0 +1,42 @@
+/*ブラウザがそれぞれ持っているCSSをリセットするための記述*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box{
+  width: 960px;
+  margin: 50px auto;
+}
+
+.box-text:nth-child(odd){
+  background-color: #eee;
+}
+
+.box-text{
+  padding: 20px 0 20px 20px;
+}
+
+.box-color{
+  width: 960px;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-color-item{
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  background-color: #ffd700;
+}
+
+.box-color-item:nth-child(4n+1){
+  background-color: #ff8c00;
+}
+
+.box-color-item:nth-child(3n){
+  margin-right: 0;
+}
